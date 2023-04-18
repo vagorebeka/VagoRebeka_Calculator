@@ -16,18 +16,18 @@
    </rowConstraints>
    <children>
    
-          <Label fx:id="welcomeText" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label fx:id="eredmenyLabel" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
       <HBox spacing="5.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
          <children>
-             <Button onAction="#onHelloButtonClick" text="+" />
-            <Button mnemonicParsing="false" text="-" />
-            <Button mnemonicParsing="false" text="*" />
-            <Button mnemonicParsing="false" text="/" />
-            <Button mnemonicParsing="false" text="\%" />
+            <Button fx:id="pluszButton" onAction="#pluszButtonClick" text="+" />
+            <Button fx:id="minuszButton" onAction="#minuszButtonClick" text="-" />
+            <Button fx:id="szorzasButton" onAction="#szorzasButtonClick" text="*" />
+            <Button fx:id="osztasButton" onAction="#osztasButtonClick" text="/" />
+            <Button fx:id="szazalekButton" onAction="#szazalekButtonClick" text="\%" />
          </children>
       </HBox>
-      <TextField GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-      <TextField />
+      <TextField fx:id="szam1Field" />
+      <TextField fx:id="szam2Field" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
    </children>
    <padding>
       <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
